@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Object detection using TensorFlow.js</title>
+    <meta charset="utf-8">
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!--  -->
+  </head>  
+  <body>
+    <h4>Project Name</h4>
+    <h1>Element Detection</h1>
+    <!--  -->
+    <table> 
+      <tbody>
+        <tr>
+          <td>Name:</td>
+          <td>Abdullah Sultan</td>
+          <td>Usama Zafar</td>
+          <td>Husnain</td>
+          <td>Noor Saba</td>
+        </tr>
+        <tr>
+          <td>BS(SE):</td>
+          <td>6th Semester(B-Section)</td>
+        </tr>
+        <tr>
+          <td>Teacher:</td>
+          <td>Dr. Ashan Raza Sattar</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      The project's structure and styling are accomplished using HTML5 and CSS3. To achieve functional behavior  , JavaScript and it's library which name is "TensorFlow.js" is utilized. Specifically, when a user clicks on a button labeled "Enable Webcam," a prompt is triggered, requesting the user's permission to access the webcam on their laptop.</p>
+
+    <p>Wait for the model to load before clicking the button to enable the webcam - at which point it will become visible to use.</p>
+    
+    <section id="demos" class="invisible">
+
+      <p>Hold some objects up close to your webcam to get a real-time classification! When ready click "Enable Webcam" below and accept access to the webcam when the browser asks (check the top left of your window)</p>
+      
+      <div id="liveView" class="camView">
+        <button id="webcamButton">Enable Webcam</button>
+        <video id="webcam" autoplay muted width="640" height="480"></video>
+      </div>
+    </section>
+
+    <!-- Import TensorFlow.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+    <!-- Load the coco-ssd model to use to recognize things in images -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    
+    <!-- Import the page's JavaScript to do some stuff -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
